@@ -1,4 +1,4 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=lazizma/lazizProject)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=lazizma/lazizProject.git)
 # tgbot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
