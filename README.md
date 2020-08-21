@@ -1,19 +1,8 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=lazizma/lazizProject.git)
-# tgbot
-A modular telegram Python bot running on python3 with an sqlalchemy database.
-
-Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular
-bots aiming to provide simple plugin expansion via a simple drag and drop.
-
-Can be found on telegram as [Marie](https://t.me/BanhammerMarie_bot).
-
-For questions regarding creating your own bot, please head to [this chat](https://t.me/MarieOT) where you'll find a
-group of volunteers to help. We'll also help when a database schema changes, and some table column needs to be
-modified/added (this info can also be found in the commit messages)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lazizma/lazizProject.git)
+# 
 
 
-Join the [news channel](https://t.me/MarieNews) if you just want to stay in the loop about new features or
-announcements.
+
 
 Marie and I can also be found moderating the [marie support group](https://t.me/MarieSupport) aimed at providing help
 setting up Marie in your chats (*not* for bot clones).
@@ -22,30 +11,7 @@ Feel free to join to report bugs, and stay in the loop on the status of the bot 
 Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
 
 
-## IMPORTANT NOTICE:
-
-This project is no longer under active maintenance. Occasional bug fixes may be released, but no new features are scheduled to be added.
-Users of [Marie](https://t.me/BanhammerMarie_bot) are encouraged to migrate to [Rose](https://t.me/MissRose_bot), which
-is the improved version of this project, written in golang, with scalability in mind.
-
-## Starting the bot.
-
-Once you've setup your database and your configuration (see below) is complete, simply run:
-
-`python3 -m tg_bot`
-
-
-## Setting up the bot (Read this before trying to use!):
-Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older python versions!
-This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6.
-
-### Configuration
-
-There are two possible ways of configuring your bot: a config.py file, or ENV variables.
-
-The prefered version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `tg_bot` folder, alongside the `__main__.py` file . 
-This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of 
+## loaded from, as well as your database URI (if you're using a database), and most of 
 your other settings.
 
 It is recommended to import sample_config and extend the Config class, as this will ensure your config contains all 
