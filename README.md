@@ -1,3 +1,5 @@
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=lazizma/lazizProject)
+Add this in your Read.md
 # tgbot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
