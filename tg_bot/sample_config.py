@@ -1,4 +1,4 @@
-if not __name__.endswith("config.py"):
+if not __name__.endswith("sample_config"):
     import sys
     print("The README is there to be read. Extend this sample config to a config file, don't just rename and change "
           "values here. Doing that WILL backfire on you.\nBot quitting.", file=sys.stderr)
@@ -10,12 +10,12 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "1041006217:AAEVEr-Hxu1uWGeqFERgpIDawV6pvWfV__4"
-    OWNER_ID = "674193259"  # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = "lazizjann"
+    API_KEY = "YOUR KEY HERE"
+    OWNER_ID = "YOUR ID HERE"  # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_USERNAME = "YOUR USERNAME HERE"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = ''  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     # sed has been disabled after the discovery that certain long-running sed commands maxed out cpu usage
